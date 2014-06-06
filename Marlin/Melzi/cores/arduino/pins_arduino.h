@@ -101,5 +101,8 @@ extern const uint8_t PROGMEM digital_pin_to_timer_PGM[];
 #define portOutputRegister(P) ( (volatile uint8_t *)( pgm_read_word( port_to_output_PGM + (P))) )
 #define portInputRegister(P) ( (volatile uint8_t *)( pgm_read_word( port_to_input_PGM + (P))) )
 #define portModeRegister(P) ( (volatile uint8_t *)( pgm_read_word( port_to_mode_PGM + (P))) )
+#define NUM_DIGITAL_PINS            32
+#define NUM_ANALOG_INPUTS           8
+#define analogInputToDigitalPin(p)  ((p < NUM_ANALOG_INPUTS) ? (p) + NUM_DIGITAL_PINS - NUM_ANALOG_INPUTS : -1)
 
 #endif
