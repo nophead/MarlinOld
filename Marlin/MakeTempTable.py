@@ -73,7 +73,7 @@ def main(argv):
         elif opt == "--adc1":
             r1 = resistance(int(arg))
         elif opt == "--adc2":
-            r2 == resistance(int(arg))
+            r2 = resistance(int(arg))
         elif opt == "--rp":
             rp = int(arg)
 
