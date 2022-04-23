@@ -133,6 +133,12 @@ typedef struct { raw_adc_t value; celsius_t celsius; } temp_entry_t;
 #if ANY_THERMISTOR_IS(30) // Kis3d Silicone mat 24V 200W/300W with 6mm Precision cast plate (EN AW 5083)
   #include "thermistor_30.h"
 #endif
+#if ANY_THERMISTOR_IS(41) // Mendel90 bed thermistor Epcos B57861S104F40 with 4K7 pullup
+  #include "thermistor_41.h"
+#endif
+#if ANY_THERMISTOR_IS(42) // Mendel90 JHeadMKV thermistor Epcos B57560G104F 100K with 4K7 pullup
+  #include "thermistor_42.h"
+#endif
 #if ANY_THERMISTOR_IS(51) // beta25 = 4092 K, R25 = 100 kOhm, Pull-up = 1 kOhm, "EPCOS"
   #include "thermistor_51.h"
 #endif
