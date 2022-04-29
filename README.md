@@ -10,7 +10,7 @@
 Additional documentation can be found at the [Marlin Home Page](https://marlinfw.org/).
 
 
-## Marlin 2.0 built for Mendel90
+## Marlin 2.0 configured for Mendel90
 
 This version is configured for a stock build of the Mendel90 kit. It has two additional thermistor tables to match the thermistors supplied in the kit. 
 
